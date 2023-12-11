@@ -44,18 +44,7 @@
                 <label for="tanggal_lahir">Tanggal Lahir</label>
                 <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
             </div>
-            <button type="submit" id="submitButton" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>
-    <script>
-            document.getElementById('submitButton').addEventListener('click', function() {
-            var confirmation = confirm("Apakah Anda yakin ingin menambahkan data siswa?");
-            if (confirmation) {
-            // If the user clicks "OK" in the confirm dialog, submit the form
-                document.getElementById('createForm').submit();
-            } else {
-                event.preventDefault();
-            }
-    });
-    </script>
 @endsection
